@@ -4,6 +4,7 @@
     <meta charset="utf-8">
     <title>Horizonte Profesional</title>
     <link rel="stylesheet" href="estilo1.css">
+    <script type="text/javascript" src="funciones.js"></script>
 </head>
 <body>
     <header>
@@ -17,7 +18,7 @@
         </nav>
     </header>
     <div class="preguntas">
-       <form>
+       <form id="encuesta">
         <fieldset>
             <legend>1-¿Qué actividad preferís hacer en tu tiempo libre?</legend>
             <input id="checkbox1"type="radio" name="actividad" value="Leer o investigar temas nuevos">
@@ -83,11 +84,9 @@
             <label for="checkbox.22">Comunicar ideas o emociones</label><br>
             <input id="checkbox.23"type="radio" name="actividad6" value="Liderar equipos o tomar decisiones importantes  ">
             <label for="checkbox.24">Liderar equipos o tomar decisiones importantes</label><br>
-        </fieldset>   
+        </fieldset>
+        <button type="button" onclick="enviarEncuesta()">Resultado</button>  
        </form>
-    </div>
-    <div class="boton6">
-    <a href="Resultado.html">Resultado</a>
     </div>
 </body>
 </html>
